@@ -10,6 +10,32 @@ import Conference from '../../assets/img/Conference.png'
 import Skyscraper from '../../assets/img/Skyscraper.png'
 // Section One IMGs
 
+// Section Two
+import SectTwoIcon from '../../assets/img/SectTwoIcon.png'
+//
+
+// Secton Three
+import SectThreeImgOne from '../../assets/img/SectThreeImgOne.png'
+import SectThreeImgTwo from '../../assets/img/SectThreeImgTwo.png'
+import SectThreeImgThree from '../../assets/img/SectThreeImgThree.png'
+import SectThreeImgFour from '../../assets/img/SectThreeImgFour.png'
+//
+
+// Section Four
+import SectFourIcon from '../../assets/img/SectFourIcon.png'
+//
+
+// Section Five
+import SectFiveOpen from '../../assets/img/SectFiveOpen.png'
+import SectFiveClose from '../../assets/img/SectFiveClose.png'
+import SectFiveCard from './sectFiveCard'
+import { CardArray } from './sectFiveArray'
+//
+
+// Section Six
+import KimJiHoon from '../../assets/img/KimJiHoon.png'
+//
+
 export default function Main(){
     return(
         <>
@@ -61,6 +87,244 @@ export default function Main(){
                                 в Южнокорейские IT компании!</p>
                                 <div className='sect-one-card-highlight-big'></div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+                <section className='sect-two'>
+                    <div className="sect-two-con">
+                        <div className='sect-two-title'>
+                            <p><span>Искусственный интеллект</span> - это круто? </p>
+                        </div>
+                        <div className='sect-two-main'>
+                            <div className='sect-two-card'>
+                                <div className='sect-two-card-img'>
+                                    <img src={SectTwoIcon} alt="" />
+                                </div>
+                                <p>На данный момент только в Южной Корее ищут 10,000 специалистов в области AI!</p>
+                                <div className="absolute" id="SectTwoFlash1"></div>
+                            </div>
+                            <div className='sect-two-card'>
+                                <div className='sect-two-card-img'>
+                                    <img src={SectTwoIcon} alt="" />
+                                </div>
+                                <p>Младшие разработчики искусственного интеллекта без опыта работы могут получать в Южной Корее 60,000,000 вон (51,000$) в год. Специалист со средним стажем работы может получать уже около 100,000,000 вон (85,000$) в год.</p>
+                                <div className="absolute" id="SectTwoFlash2"></div>
+                            </div>
+                            <div className='sect-two-card'>
+                                <div className='sect-two-card-img'>
+                                    <img src={SectTwoIcon} alt="" />
+                                </div>
+                                <p>В США уровень зарплат ещё выше! Младший специалист без опыта работы получает в среднем 93,000$ в год. А инженер со средним стажем работы получает уже больше 140,000$ в год!</p>
+                                <div className="absolute" id="SectTwoFlash3"></div>
+                            </div>
+                            <div className='sect-two-card'>
+                                <div className='sect-two-card-img'>
+                                    <img src={SectTwoIcon} alt="" />
+                                </div>
+                                <p>А самое вкусное то, что твоя зарплата будет расти вместе 
+                                с твоими навыками. Стаж не так важен.</p>
+                                <div className="absolute" id="SectTwoFlash4"></div>
+                            </div>
+                        </div>
+                        <div className='sect-two-button'>
+                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
+                        </div>                        
+                    </div>
+                </section>
+                <section className='sect-three'>
+                    <div className="sect-three-con">
+                        <div className='sect-three-title'>
+                            <p><span>Важно</span> понимать что</p>
+                        </div>
+                        <div className='sect-three-main'>
+                            <div className='sect-three-main-top'>
+                                <div className='sect-three-img'>
+                                    <img src={SectThreeImgOne} alt="" />
+                                </div>
+                                <div className='sect-three-text'>
+                                    <p>Искусственный интеллект - <br />
+                                    это не одна дисциплина, как думают многие, а совокупность различных между собой направлений.</p>
+                                </div>
+                                <div className='sect-three-img'>
+                                    <img src={SectThreeImgTwo} alt="" />
+                                </div>
+                                <div className='sect-three-text'>
+                                    <p>Подготовка реально хороших специалистов требует времени, краткосрочные курсы эффекта не дают.</p>
+                                </div>
+                            </div>
+                            <div className='sect-three-main-bot'>
+                                <div className='sect-three-text'>
+                                    <p>Большинство менторов никогда не работали над реальными проектами. 
+                                        Они изучали все по видеоурокам и книжкам, 
+                                        и преподают без практики, что очень печально.</p>
+                                </div>
+                                <div className='sect-three-img'>
+                                    <img src={SectThreeImgThree} alt="" />
+                                </div>
+                                <div className='sect-three-text'>
+                                    <p>На многих курсах 
+                                        преподают готовые/идеальные кейсы 
+                                        без всяких сложностей, поэтому студенты после таких курсов не могут 
+                                        решать реальные задачи 
+                                        на работе. </p>
+                                </div>
+                                <div className='sect-three-img'>
+                                    <img src={SectThreeImgFour} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className='sect-four'>
+                    <div className="sect-four-con">
+                        <div className='sect-four-title'>
+                            <p>Почему именно наш курс? <span>Все просто!</span></p>
+                        </div>
+                        <div className='sect-four-main'>
+                            <div className='sect-four-card'>
+                                <div className='sect-four-card-img'>
+                                    <img src={SectFourIcon} alt="" />
+                                </div>
+                                <div className='sect-four-card-text'>
+                                    <p>Объясняем сложные вещи простым и доходчивым языком.</p>
+                                </div>
+                                <div className="absolute" id="SectFourLight"></div>
+                            </div>
+                            <div className='sect-four-card'>
+                                <div className='sect-four-card-img'>
+                                    <img src={SectFourIcon} alt="" />
+                                </div>
+                                <div className='sect-four-card-text'>
+                                    <p>Обучаем не просто языку программирования, или одной какой-то дисциплине, мы обучаем полностью всей специальности.</p>
+                                </div>
+                                <div className="absolute" id="SectFourLight"></div>
+                            </div>
+                            <div className='sect-four-card'>
+                                <div className='sect-four-card-img'>
+                                    <img src={SectFourIcon} alt="" />
+                                </div>
+                                <div className='sect-four-card-text'>
+                                    <p>Ознакомляем с содержанием урока только в режиме реального времени. Ты сможешь сразу задать вопрос и тут же получить ответы. Мы всегда будем рядом. </p>
+                                </div>
+                                <div className="absolute" id="SectFourLight"></div>
+                            </div>
+                            <div className='sect-four-card'>
+                                <div className='sect-four-card-img'>
+                                    <img src={SectFourIcon} alt="" />
+                                </div>
+                                <div className='sect-four-card-text'>
+                                    <p>Обучение ведет ведущий и действующий специалист в области искусственного интеллекта в Южной Корее.</p>
+                                </div>
+                                <div className="absolute" id="SectFourLight"></div>
+                            </div>
+                            <div className='sect-four-card'>
+                                <div className='sect-four-card-img'>
+                                    <img src={SectFourIcon} alt="" />
+                                </div>
+                                <div className='sect-four-card-text'>
+                                    <p>Обучение проходит в группе по 15 человек, которая внутри делится на 3 команды, и каждая команда выполняет собственный проект. Таким образом, студенты смогут прочувствовать тонкости командной разработки, и уже на этапе обучения окунуться в рабочую атмосферу AI специалиста.</p>
+                                </div>
+                                <div className="absolute" id="SectFourLight"></div>
+                            </div>
+                        </div>
+                        <div className='sect-four-button'>
+                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
+                        </div>
+                    </div>
+                </section>
+                <section className='sect-five'>
+                    <div className="sect-five-con">
+                        <div className="sect-five-title">
+                            <p><span>Что я узнаю</span> из этих курсов? </p>
+                        </div>
+                        <div className="sect-five-desc">
+                            <p>Полностью весь курс состоит из 3 частей</p>
+                        </div>
+                        <div className="sect-five-main">
+                            <div className='sect-five-junior'>
+                                <div className='five-junior-left'>
+                                    <div className='junior-left-dot'>
+                                        <div></div>
+                                    </div>
+                                    <div className='junior-left-text'>
+                                        <p>AI - Junior Level. <span>Продолжительность 1 год</span></p>
+                                    </div>
+                                </div>
+                                <div className='five-junior-right'>
+                                    <img src={SectFiveOpen} alt="" />
+                                </div>
+                            </div>
+                            <div className='sect-five-info'>
+                                <SectFiveCard number={CardArray[0].number} title={CardArray[0].title} desc={CardArray[0].desc}/>
+                                <SectFiveCard number={CardArray[1].number} title={CardArray[1].title} desc={CardArray[1].desc}/>
+                                <SectFiveCard number={CardArray[2].number} title={CardArray[2].title} desc={CardArray[2].desc}/>
+                                <SectFiveCard number={CardArray[3].number} title={CardArray[3].title} desc={CardArray[3].desc}/>
+                                <SectFiveCard number={CardArray[4].number} title={CardArray[4].title} desc={CardArray[4].desc}/>
+                                <SectFiveCard number={CardArray[5].number} title={CardArray[5].title} desc={CardArray[5].desc}/>
+                                <SectFiveCard number={CardArray[6].number} title={CardArray[6].title} desc={CardArray[6].desc}/>
+                                <SectFiveCard number={CardArray[7].number} title={CardArray[7].title} desc={CardArray[7].desc}/>
+                                <SectFiveCard number={CardArray[8].number} title={CardArray[8].title} desc={CardArray[8].desc}/>
+                                <SectFiveCard number={CardArray[9].number} title={CardArray[9].title} desc={CardArray[9].desc}/>
+                                <SectFiveCard number={CardArray[10].number} title={CardArray[10].title} desc={CardArray[10].desc}/>
+                            </div>
+                            <div className='sect-five-senior'>
+                                <div className='five-junior-left'>
+                                    <div className='junior-left-dot'>
+                                        <div></div>
+                                    </div>
+                                    <div className='junior-left-text'>
+                                        <p>AI - Senior Level. <span>Продолжительность 1.5 года. </span></p>
+                                    </div>
+                                    <div className='junior-left-add-text'>
+                                        <p>В разработке</p>
+                                    </div>
+                                </div>
+                                <div className='five-junior-right'>
+                                    <img src={SectFiveClose} alt="" />
+                                </div>
+                            </div>
+                            <div className='sect-five-senior'>
+                                <div className='five-junior-left'>
+                                    <div className='junior-left-dot'>
+                                        <div></div>
+                                    </div>
+                                    <div className='junior-left-text'>
+                                        <p>AI - Senior Level V2.0. <span>Продолжительность 2 год</span></p>
+                                    </div>
+                                    <div className='junior-left-add-text'>
+                                        <p>В разработке</p>
+                                    </div>
+                                </div>
+                                <div className='five-junior-right'>
+                                    <img src={SectFiveClose} alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="sect-five-button">
+                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
+                        </div>
+                    </div>
+                </section>
+                <section className='sect-six'>
+                    <div className="sect-six-con">
+                        <div className='sect-six-text'>
+                            <p>Автор курса </p>
+                            <p>
+                                Основателем курса является Владимир Ким, действующий и ведущий специалист в области искусственного интеллекта в Южной Корее, который разрабатывал системы искусственного интеллекта для компаний Samsung SDS, LG science park <br />
+                                и LG digital park. <br />
+                                <br />
+                                На данный момент, Владимир занимается разработкой виртуальных сенсоров на основе нейронных сетей. <br />
+                                <br />
+                                Является одним из авторов диссертации об обработке больших данных для Южнокорейского института по развитию Интернета. <br />
+                                <br />
+                                Действующий член ассоциации разработчиков программного обеспечения в Южной Корее. <br />
+                                <br />
+                                Активно участвует в R&D проектах по внедрению искусственного интеллекта для государственных предприятий Южной Кореи.
+                            </p>
+                        </div>
+                        <div className='sect-six-img'>
+                            <img src={KimJiHoon} alt="" />
+                            <p><span>Владимир Ким</span> <br /> Ведущий специалист</p>
                         </div>
                     </div>
                 </section>

@@ -1,4 +1,5 @@
 import './header.css'
+import Button from './button/button'
 
 import Logo from '../../assets/img/Logo.png'
 import Phone from '../../assets/img/Phone.png'
@@ -44,9 +45,7 @@ export default function Header(){
                             </div>
 
                         </div>
-                        <div className='header-subscribe'>
-                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
-                        </div>
+                        <Button/>
                     </div>
                 </div>
 

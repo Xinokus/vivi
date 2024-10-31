@@ -1,3 +1,40 @@
+.page-load{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #073447, #08262B);
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-load-con{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    animation: loading 1s infinite ease;
+    border-radius: 200px;
+}
+@keyframes loading {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+.page-load-circle{
+    width: 40px;
+    height: 40px;
+    background-color: #00E0FF;
+    border-radius: 40px;
+    position: absolute;
+}
+.page-load-circle:nth-of-type(2){
+    transform: translate(0px, 160px);
+}
 main{
     background-color: black;
 }
@@ -573,4 +610,275 @@ div.sect-one-card-highlight-big{
     color: #00E0FF;
     font-size: 24px;
     font-weight: 800;
+}
+.sect-seven{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -15px 15px -15px #00E0FF, inset 0px 15px 15px -15px #00E0FF;
+    background: linear-gradient(45deg, rgba(2, 35, 53, 0.8), rgba(12, 55, 61, 0.8));
+    overflow: hidden;
+}
+.sect-seven-con{
+    width: 1200px;
+    height: 514px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-seven-top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sect-seven-top-title{
+    font-size: 54px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: white;
+}
+.sect-seven-top-button{
+    width: 213px;
+    height: 60px;
+}
+.sect-seven-top-button button{
+    width: 213px;
+    height: 60px;
+    background: none;
+    border: 1px solid #00E0FF;
+    border-radius: 9px;
+}
+.sect-seven-top-button p{
+    font-size: 12px;
+    font-weight: 700;
+    color: #00E0FF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.sect-seven-swiper{
+    width: 1200px;
+    height: 402px;
+}
+.sect-seven-card{
+    width: 387px;
+    height: 402px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-seven-card-text{
+    width: 100%;
+    height: 107px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-seven-card-text div:nth-of-type(1){
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+.sect-seven-card-text div:nth-of-type(2){
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+.sect-seven-card-button button{
+    background: none;
+    border: none;
+    color: #4ABCEC;
+    text-decoration: underline;
+}
+.swiper{
+    overflow: hidden !important;
+    width: 1200px;
+}
+.swiper-wrapper{
+    width: 400px !important;
+}
+.swiper-button-prev{
+    width: 62px !important;
+    height: 62px !important;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.6), #13CDC2);
+    border-radius: 62px;
+    opacity: 1;
+    box-shadow: 0 7px 20px -7px #00E0FF;
+    transform: translate(10px, -90px);
+}
+.swiper-button-prev:after{
+    width: 42px;
+    height: 42px;
+    content: url(../../assets/img/ArrowToLeft.png) !important;
+    transform: translate(10px, -12px);
+}
+.swiper-button-next{
+    width: 62px !important;
+    height: 62px !important;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.6), #13CDC2);
+    border-radius: 62px;
+    opacity: 1;
+    box-shadow: 0 7px 20px -7px #00E0FF;
+    transform: translate(-10px, -90px);
+}
+.swiper-button-prev.swiper-button-disabled{
+    background: #08262B !important;
+    box-shadow: none !important;
+    opacity: 0.8 !important;
+}
+.swiper-button-next.swiper-button-disabled{
+    background: #08262B !important;
+    box-shadow: none !important;
+    opacity: 0.8 !important;
+}
+.swiper-button-next:after{
+    width: 42px;
+    height: 42px;
+    content: url(../../assets/img/ArrowToRight.png) !important;
+    transform: translate(10px, -12px);
+}
+.swiper-slide{
+    width: 400px !important;
+    height: 402px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    opacity: 1;
+    transition: 0.5s all ease;
+}
+.swiper-slide-prev{
+    opacity: 0.3;
+    transition: 0.5s all ease;
+}
+.sect-eight{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px -15px 15px -15px #00E0FF, inset 0px 15px 15px -15px #00E0FF;
+    background: linear-gradient(-45deg, rgba(2, 35, 53, 0.8), rgba(12, 55, 61, 0.8));
+    overflow: hidden;
+}
+.sect-eight-con{
+    width: 1200px;
+    height: 514px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-eight-top{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sect-eight-top-title{
+    font-size: 54px;
+    line-height: 54px;
+    text-transform: uppercase;
+    color: white;
+}
+.sect-eight-top-button{
+    width: 213px;
+    height: 60px;
+}
+.sect-eight-top-button button{
+    width: 183px;
+    height: 60px;
+    background: none;
+    border: 1px solid #00E0FF;
+    border-radius: 9px;
+}
+.sect-eight-top-button p{
+    font-size: 12px;
+    font-weight: 700;
+    color: #00E0FF;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+.sect-eight-swiper{
+    width: 1200px;
+    height: 402px;
+}
+.sect-eight-card{
+    width: 387px;
+    height: 402px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-eight-card-text{
+    width: 100%;
+    height: 107px;
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    flex-direction: column;
+}
+.sect-eight-card-text div:nth-of-type(1){
+    font-size: 16px;
+    color: white;
+    font-weight: 700;
+}
+.sect-eight-card-text div:nth-of-type(2){
+    font-size: 15px;
+    color: white;
+    font-weight: 500;
+}
+.sect-eight-card-button button{
+    background: none;
+    border: none;
+    color: #4ABCEC;
+    text-decoration: underline;
+}
+#GetUp{
+    width: 302px;
+    height: 139px;
+    rotate: 270deg;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate(150px, 20px);
+    z-index: 10;
+}
+#GetUp p{
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+    color: #00E0FF;
+}
+#GetUp button{
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 7px 20px -7px #00E0FF;
+    background: linear-gradient(180deg, rgba(3, 225, 255, 0.66), #13CDC2);
+    border-radius: 100px;
+    border: none;
+    rotate: 90deg;
+    cursor: pointer;
+}
+#GetUp div{
+    width: 139px;
+    height: 139px;
+    background-color: rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 139px;
+}
+#GetUp img{
+    rotate: 90deg;
 }

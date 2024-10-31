@@ -110,7 +110,7 @@ nav{
     font-weight: 500;
     font-size: 18px;
 }
-.header-subscribe{
+/* .header-subscribe{
     width: 479px;
     height: 60px;
     margin-top: 50px;
@@ -130,7 +130,7 @@ nav{
     font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
-}
+} */
 #ScrollDown{
     rotate: 270deg;
     width: 196px;

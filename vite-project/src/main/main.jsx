@@ -1,6 +1,8 @@
 import './main.css'
+import Button from '../header/button/button'
 
-// Section One IMGs
+import ArrowToLeft from '../../assets/img/ArrowToLeft.png'
+// Section One
 import Manager from '../../assets/img/Manager.png'
 import Blockchain from '../../assets/img/Blockchain.png'
 import Webdesign from '../../assets/img/Webdesign.png'
@@ -8,7 +10,7 @@ import Survey from '../../assets/img/Survey.png'
 import People from '../../assets/img/People.png'
 import Conference from '../../assets/img/Conference.png'
 import Skyscraper from '../../assets/img/Skyscraper.png'
-// Section One IMGs
+//
 
 // Section Two
 import SectTwoIcon from '../../assets/img/SectTwoIcon.png'
@@ -34,6 +36,25 @@ import { CardArray } from './sectFiveArray'
 
 // Section Six
 import KimJiHoon from '../../assets/img/KimJiHoon.png'
+//
+
+// Section Seven
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+import { Navigation } from 'swiper/modules';
+
+import SectSevenCard from './SectSevenCard/SectSevenCard'
+import SectSevenImgOne from '../../assets/img/SectSevenImgOne.png'
+import SectSevenImgTwo from '../../assets/img/SectSevenImgTwo.png'
+import SectSevenImgThree from '../../assets/img/SectSevenImgThree.png'
+import SectSevenImgFour from '../../assets/img/SectSevenImgFour.png'
+//
+
+// Section Eight
+import SectEightCard from './SectEightCard/SectEightCard'
 //
 
 export default function Main(){
@@ -126,9 +147,7 @@ export default function Main(){
                                 <div className="absolute" id="SectTwoFlash4"></div>
                             </div>
                         </div>
-                        <div className='sect-two-button'>
-                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
-                        </div>                        
+                        <Button></Button>                    
                     </div>
                 </section>
                 <section className='sect-three'>
@@ -227,9 +246,7 @@ export default function Main(){
                                 <div className="absolute" id="SectFourLight"></div>
                             </div>
                         </div>
-                        <div className='sect-four-button'>
-                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
-                        </div>
+                        <Button></Button>     
                     </div>
                 </section>
                 <section className='sect-five'>
@@ -300,9 +317,7 @@ export default function Main(){
                                 </div>
                             </div>
                         </div>
-                        <div className="sect-five-button">
-                            <button type="button"><p>Записаться на ознакомительный вебинар</p></button>
-                        </div>
+                        <Button></Button>     
                     </div>
                 </section>
                 <section className='sect-six'>
@@ -328,7 +343,60 @@ export default function Main(){
                         </div>
                     </div>
                 </section>
+                <section className='sect-seven'>
+                    <div className='sect-seven-con'>
+                        <div className='sect-seven-top'>
+                            <div className='sect-seven-top-title'>
+                                <p>Объявления школы</p>
+                            </div>
+                            <div className='sect-seven-top-button'>
+                                <button type="button"><p>Все объявления</p></button>
+                            </div>
+                        </div>
+                        <Swiper className='sect-seven-swiper' navigation={true} slidesPerView={3} modules={[Navigation]}>
+                            <SwiperSlide>
+                                <SectSevenCard IMG={SectSevenImgOne}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectSevenCard IMG={SectSevenImgTwo}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectSevenCard IMG={SectSevenImgThree}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectSevenCard IMG={SectSevenImgFour}/>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                </section>
+                <section className='sect-eight'>
+                    <div className='sect-eight-con'>
+                        <div className='sect-eight-top'>
+                            <div className='sect-eight-top-title'>
+                                <p>Вакансии</p>
+                            </div>
+                            <div className='sect-eight-top-button'>
+                                <button type="button"><p>Все вакансии</p></button>
+                            </div>
+                        </div>
+                        <Swiper className='sect-eight-swiper' navigation={true} slidesPerView={3} modules={[Navigation]}>
+                            <SwiperSlide>
+                                <SectEightCard IMG={SectSevenImgFour} title={"Требуется администратор"}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectEightCard IMG={SectSevenImgThree} title={"Требуется менеджер"}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectEightCard IMG={SectSevenImgTwo} title={"Требуется администратор"}/>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <SectEightCard IMG={SectSevenImgOne} title={"Требуется менеджер"}/>
+                            </SwiperSlide>
+                        </Swiper>
+                    </div>
+                </section>
             </main>
+            <div className="absolute" id="GetUp"><div><button type="button"><img src={ArrowToLeft} alt="" /></button></div><p>Подняться вверх</p></div>
         </>
     )
 }
